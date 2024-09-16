@@ -1,49 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
-    margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #2a2a2a;
-    border-radius: 8px;
-}
-
-h1, h2 {
-    color: #00aaff;
-}
-
-p {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #eaeaea;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.chart-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+.project-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.chart-container img {
-    width: 45%;
-    border: 1px solid #444;
+h2, h3 {
+    color: #33ccff;
+}
+
+.chart img {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 2px solid #33ccff;
     border-radius: 8px;
 }
 
-.back-link {
+.back-project-button {
     display: inline-block;
-    padding: 10px 15px;
-    background-color: #00aaff;
-    color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #33ccff;
+    color: #1a1a1a;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
-.back-link:hover {
-    background-color: #0088cc;
+.back-project-button:hover {
+    background-color: #29a3cc;
 }
