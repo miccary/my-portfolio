@@ -22,29 +22,90 @@
         <!-- Data Processing Section -->
         <section class="data-analysis">
             <h2>Data Processing and Feature Engineering</h2>
-            <p>The logistics data underwent preprocessing and feature engineering before applying optimization algorithms. Below are the links to SQL code and Jupyter notebooks:</p>
-            <a href="https://github.com/miccary/my-portfolio/blob/main/project/data_populating.sql" class="button">Download SQL Data Populating Code</a>
-            <a href="https://github.com/miccary/my-portfolio/blob/main/project/Data_processing_and_feature_engineering.sql" class="button">Download SQL Data Processing Code</a>
-            <a href="https://github.com/miccary/my-portfolio/blob/main/project/logistics_EDA.ipynb" class="button">View EDA Analysis</a>
-            <a href="https://github.com/miccary/my-portfolio/blob/main/project/logistics_model.ipynb" class="button">View Machine Learning Model</a>
+            <p>The dataset includes historical logistics data, such as package dimensions, travel times, and route information. Data cleaning and feature engineering were conducted to derive metrics like package density and service time ratio, crucial for building robust predictive models.</p>
+            <p>Below is a snippet of the code used for data processing and feature engineering.</p>
+
+            <pre>
+                <code>
+        # Load logistics data
+        import pandas as pd
+        
+        # Read the dataset
+        data = pd.read_csv('logistics_data.csv')
+        
+        # Feature engineering: calculate cost per distance ratio
+        data['cost_per_distance'] = data['cost'] / data['distance']
+        
+        # Handle missing values and clean data
+        data = data.dropna()
+        
+        # Example of basic feature processing
+        print(data.head())
+                </code>
+            </pre>
+            <a href="https://github.com/miccary/my-portfolio/blob/main/project/data_populating.sql" class="button">View SQL Data Populating Code</a>
+            <a href="https://github.com/miccary/my-portfolio/blob/main/project/Data_processing_and_feature_engineering.sql" class="button">View SQL Data Processing Code</a>
         </section>
 
-        <!-- Optimization Techniques Section -->
-        <section class="optimization">
-            <h2>Optimization Techniques</h2>
+        <section class="eda">
+            <h2>Exploratory Data Analysis (EDA)</h2>
+            <div class="chart-container">
+                <h3>Distribution of Features</h3>
+                <img src="images/feature_distribution1.png" alt="Distribution of Features" class="chart-image">
+                <img src="images/feature_distribution2.png" alt="Distribution of Features" class="chart-image">
+                <p>The distribution analysis shows that most travel times are concentrated in shorter intervals, indicating compact logistics routes with short distances between stops.</p>
+            </div>
+    
+            <div class="chart-container">
+                <h3>Correlation Heatmap</h3>
+                <img src="images/relative_matrix.png" alt="Correlation Heatmap" class="chart-image">
+                <p>The correlation heatmap helped identify key features like package density and stop frequency, guiding the selection of relevant variables for the optimization models.</p>
+            </div>
+            <a href="https://github.com/miccary/my-portfolio/blob/main/project/logistics_EDA.ipynb" class="button">View EDA Analysis</a>
+        </section>
+
+        <!-- Optimization Techniques Section -->   
+        <section class="modeling">
+            <h2>Modeling</h2>
+            <p>Various machine learning models were trained to predict package delivery success rates, including Linear Regression, Random Forest, and Gradient Boosting. Advanced algorithms like Genetic Algorithms, Simulated Annealing, and a combination of Neural Networks with graph-based algorithms were used to solve the Traveling Salesman Problem (TSP) for route optimization.</p>
             <p>The following optimization algorithms were applied to improve logistics efficiency:</p>
             <ul>
                 <li>Genetic Algorithm</li>                             
                 <li>Simulated Annealing</li>   
                 <li>Neural Network Graph Theory Hybrid Models</li>
             </ul>
+        </section>
+
+        <section class="evaluation">
+            <h2>Model Evaluation and Results</h2>
+            <div class="chart-container">
+                <h3>Model Evaluation Metrics</h3>
+                <img src="images/model_evaluation1.png" alt="Model Evaluation Metrics" class="chart-image">
+                <img src="images/model_evaluation2.png" alt="Model Evaluation Metrics" class="chart-image">
+                <p>The Random Forest and Gradient Boosting models performed well, but the Stacking Regressor achieved the best results, emphasizing the importance of model selection. The combined approach of Neural Networks, MST, and Genetic Algorithms in route optimization significantly reduced total travel costs.</p>
+            </div>
+        </section>
+
+        <section class="software-results">
+            <h2>Final Software Output</h2>
+            <div class="chart-container">
+                <h3>Optimized Route Results</h3>
+                <img src="images/app1.png" alt="TSP Optimization Software Output" class="chart-image">
+                <img src="images/app2.png" alt="TSP Optimization Software Output" class="chart-image">
+                <p>The final software results demonstrate the practical application of these models, showing clear cost differences when compared to actual routes, providing logistics companies with effective tools for route optimization.</p>
+            </div>
             <a href="https://github.com/miccary/my-portfolio/blob/main/project/logistics_model.ipynb" class="button">View Optimization Results</a>
         </section>
 
         <!-- Soft Skills Section -->
-        <section class="soft-skills">
-            <h2>Soft Skills Demonstrated</h2>
-            <p>This project involved close collaboration with cross-functional teams and required effective problem-solving under time constraints.</p>
+        <section class="skills-showcase">
+            <h2>Skills Demonstrated</h2>
+            <p>This project involved:</p>
+            <ul>  
+                <li>Collaboration with cross-functional teams to understand logistics requirements.</li>
+                <li>Data handling using SQL and Python libraries like Pandas for preprocessing and feature engineering.</li>
+                <li>Application of optimization algorithms to improve logistics route efficiency.</li>
+            </ul>
         </section>
     </main>
 
