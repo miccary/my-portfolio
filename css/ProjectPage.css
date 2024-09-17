@@ -21,13 +21,20 @@ header h1 {
     color: #00ffcc;
 }
 
-/* Project list styling */
-.project-list {
+/* Main content styling */
+main {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+/* Project list styling */
+.project-list {
+    width: 100%;
+    max-width: 800px;
     padding: 20px;
-    flex: 1;
 }
 
 .project-card {
@@ -36,8 +43,6 @@ header h1 {
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
-    width: 100%;
-    max-width: 800px;
     text-align: center;
 }
 
@@ -67,14 +72,13 @@ header h1 {
     background-color: #00cca3;
 }
 
-/* Footer styling */
-footer {
+/* Back home button styling */
+.back-home {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
     padding: 20px;
-    background-color: #121212;
-    color: #666;
 }
 
 .back-home-button {
@@ -90,3 +94,12 @@ footer {
 .back-home-button:hover {
     background-color: #00cca3;
 }
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #121212;
+    color: #666;
+}
+
