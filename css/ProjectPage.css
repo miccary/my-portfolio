@@ -75,13 +75,13 @@ footer {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #33ccff;
-    color: #1a1a1a;
+    background-color: #00ffcc;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .back-home-button:hover {  
-    background-color: #29a3cc;
+    background-color: #00cca3;
 }
