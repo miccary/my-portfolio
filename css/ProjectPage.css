@@ -4,8 +4,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #0d0d0d;
     color: #ffffff;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header styling */
@@ -26,6 +27,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    flex: 1;
 }
 
 .project-card {
@@ -67,17 +69,16 @@ header h1 {
 
 /* Footer styling */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #121212;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
     color: #666;
 }
 
 .back-home-button {
     display: inline-block;
-    margin-top: 20px;
     padding: 12px 25px;
     background-color: #00ffcc;
     color: #ffffff;
@@ -86,6 +87,6 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.back-home-button:hover {  
+.back-home-button:hover {
     background-color: #00cca3;
 }
