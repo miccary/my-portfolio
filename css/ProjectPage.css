@@ -68,17 +68,19 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #121212;
+    align-items: center;
+    justify-content: center;
     color: #666;
 }
 
 .back-home-button {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #00ffcc;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
