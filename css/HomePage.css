@@ -52,8 +52,9 @@ nav ul li a {
 }
 
 .cta-button {
-    display: inline-block;
-    margin-top: 30px;
+    display: block; /* Change to block to make buttons stack vertically */
+    width: 200px; /* Set a fixed width for the buttons */
+    margin: 15px auto; /* Auto centers the button and adds top margin */
     padding: 15px 30px;
     background-color: #61dafb;
     color: #0d0f24;
@@ -66,6 +67,7 @@ nav ul li a {
 .cta-button:hover {
     background-color: #52c7ea;
 }
+
 
 .projects-preview {
     padding: 50px 20px;
