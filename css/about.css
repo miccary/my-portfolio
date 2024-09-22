@@ -77,4 +77,28 @@ footer {
     color: #00e676;
     border: 2px solid #00e676;
 }
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: fixed;
+    height: 100%;
+}
+
+.profile-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.sidebar p {
+    text-align: center;
+    color: #333;
+}
 
