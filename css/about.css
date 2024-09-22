@@ -59,3 +59,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* about.css */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00e676;
+    color: #1b1b1b;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1b1b1b;
+    color: #00e676;
+    border: 2px solid #00e676;
+}
+
