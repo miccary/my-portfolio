@@ -111,6 +111,24 @@ nav ul li a {
     background-color: #52c7ea;
 }
 
+/* Logo container styling */
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Logo image styling */
+.logo-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
 footer {
     padding: 20px;
     text-align: center;
