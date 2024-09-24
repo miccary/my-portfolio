@@ -103,3 +103,38 @@ footer {
     color: #666;
 }
 
+/* Sky Background with Shooting Stars */
+.sky {
+    position: fixed;  /* Make it fixed so it stays as a background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind everything else */
+    pointer-events: none; /* Prevent interaction with the background */
+    background-color: transparent; /* Keep it transparent so stars are visible */
+}
+
+/* Shooting Star */
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    opacity: 0;
+    transform: rotate(45deg);
+    animation: shooting 3s ease-out infinite;
+}
+
+/* Keyframes for shooting star */
+@keyframes shooting {
+    from {
+        transform: translateY(-100px) translateX(-100px) rotate(135deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(500px) translateX(500px) rotate(135deg);
+        opacity: 0;
+    }
+}
