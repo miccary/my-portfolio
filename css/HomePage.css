@@ -165,11 +165,11 @@ footer {
 /* Keyframes for shooting star */
 @keyframes shooting {
     from {
-        transform: translateY(-100px) translateX(-100px) rotate(45deg);
+        transform: translateY(-100px) translateX(-100px) rotate(135deg);
         opacity: 1;
     }
     to {
-        transform: translateY(500px) translateX(500px) rotate(45deg);
+        transform: translateY(500px) translateX(500px) rotate(135deg);
         opacity: 0;
     }
 }
