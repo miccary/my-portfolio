@@ -70,7 +70,6 @@ nav ul li a {
     background-color: #52c7ea;
 }
 
-
 .projects-preview {
     padding: 50px 20px;
     text-align: center;
@@ -139,14 +138,16 @@ footer {
     background-color: #1a1d3c;
 }
 
+/* Sky Background with Shooting Stars */
 .sky {
-    position: absolute;
+    position: fixed;  /* Make it fixed so it stays as a background */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0d0f24;
-    overflow: hidden;
+    z-index: -1; /* Behind everything else */
+    pointer-events: none; /* Prevent interaction with the background */
+    background-color: transparent; /* Keep it transparent so stars are visible */
 }
 
 /* Shooting Star */
