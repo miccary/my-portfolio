@@ -136,3 +136,26 @@ footer {
     text-align: center;
     background-color: #1a1d3c;
 }
+
+/* 流星的样式 */
+.shooting-star {
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    animation: shoot 2s ease-out infinite;
+}
+
+/* 动画轨迹 */
+@keyframes shoot {
+    from {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(600px) translateY(300px);
+        opacity: 0;
+    }
+}
+
