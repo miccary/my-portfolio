@@ -159,17 +159,17 @@ footer {
     border-radius: 50%;
     opacity: 0;
     transform: rotate(45deg);
-    animation: shooting 2s ease-out infinite;
+    animation: shooting 3s ease-out infinite;
 }
 
 /* Keyframes for shooting star */
 @keyframes shooting {
     from {
-        transform: translateY(-100px) translateX(-100px);
+        transform: translateY(-100px) translateX(-100px) rotate(45deg);
         opacity: 1;
     }
     to {
-        transform: translateY(500px) translateX(500px);
+        transform: translateY(500px) translateX(500px) rotate(45deg);
         opacity: 0;
     }
 }
