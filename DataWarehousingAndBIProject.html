@@ -34,24 +34,42 @@
             <p>Reports generated using SQL Server Reporting Services (SSRS) provided insights into sales trends, procurement strategies, and supplier performance. Additionally, Tableau visualizations offered a real-time view of business performance, aiding in decision-making.</p>
             <img src="images/ssrs_report.png" alt="SSRS Report Example" class="project-image">
             <img src="images/tableau_dashboard.png" alt="Tableau Dashboard Example" class="project-image">
+
+            <!-- Tableau Visualization Embed -->
+            <div id="tableauViz" style="width:800px; height:600px;"></div>
+
+            <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+            <script type="text/javascript">
+                var viz;
+                var containerDiv = document.getElementById("tableauViz");
+                var url = "https://public.tableau.com/views/4_Datastorage_/BusinessAnalyticsOfaRussianUnderwearIndustryDashboard?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
+            
+                var options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Tableau visualization is ready.");
+                    }
+                };
+            
+                viz = new tableau.Viz(containerDiv, url, options);
+            </script>
         </section>
 
         <section class="report-download">
             <h2>Report on the analysis process</h2>
             <p>Click on the link below to download the full analytical process report for a detailed look at the implementation process and analytical details of the Data Warehouse and BI project.</p>
-
             <a href="project/DataWarehouseAndBI.pdf" class="back-project-button">Download Analytical Process Report</a>
         </section>
-
 
         <section class="back-project">
             <a href="projects.html" class="back-project-button">Return to Projects</a>
         </section>
     </main>
 
-    <footer>  
+    <footer>
         <p>&copy; 2024 My Sci-Fi Portfolio</p>
     </footer>
+
     <!-- GSAP and shooting star script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="js/shooting_star.js" defer></script>
